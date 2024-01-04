@@ -32,7 +32,7 @@ client.on('chat', (channel, user, message, self) => {
 
     // Delay sending the message (5 seconds)
     setTimeout(() => {
-        client.say(targetChannel, `${user['display-name']}: ${message}`);
+        client.say(targetChannel, `@${user['display-name']}: ${message}`);
     }, 5000);
 });
 
